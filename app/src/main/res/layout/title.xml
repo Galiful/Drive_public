@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ToolbarPopupTheme">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:onClick="clickback"
+            android:background="@drawable/back"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/clButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/city_list_pressed"
+                android:onClick="clickCityListButton"
+                android:text="城市列表"
+                android:textColor="@color/colorPrimary" />
+
+            <Button
+                android:id="@+id/localButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/down_manager"
+                android:onClick="clickLocalMapListButton"
+                android:text="下载管理"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+</LinearLayout>

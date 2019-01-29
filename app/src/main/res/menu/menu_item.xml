@@ -1,0 +1,69 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:id="@+id/group1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_item_ip"
+            android:gravity="left"
+            android:icon="@drawable/item_ip"
+            android:title="更改服务器ip和端口" />
+        <item
+            android:id="@+id/menu_item_user"
+            android:gravity="left"
+            android:icon="@drawable/user_02"
+            android:title="切换用户1/2" />
+        <item
+            android:id="@+id/menu_item_return"
+            android:gravity="left"
+            android:icon="@drawable/item_park"
+            android:title="停车指令" />
+
+        <item
+            android:id="@+id/menu_item_reset"
+            android:gravity="left"
+            android:icon="@drawable/item_reset"
+            android:title="重置召车操作" />
+        <item
+            android:id="@+id/menu_item_carinfo"
+            android:gravity="left"
+            android:icon="@drawable/item_update"
+            android:title="刷新召车信息" />
+        <item
+            android:id="@+id/menu_item_verify"
+            android:gravity="left"
+            android:icon="@drawable/item_face"
+            android:title="人脸验证 " />
+
+    </group>
+
+    <group
+        android:id="@+id/group2"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_item_camera"
+            android:gravity="left"
+            android:icon="@drawable/item_navi"
+            android:title="智能导航"/>
+        <item
+            android:id="@+id/menu_item_offlinemap"
+            android:gravity="left"
+            android:icon="@drawable/item_offlinemap"
+            android:title="离线地图" />
+        <item
+            android:id="@+id/menu_item_about"
+            android:gravity="left"
+            android:icon="@drawable/item_about"
+            android:title="关于" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+
+        </menu>
+    </item>
+
+
+</menu>
